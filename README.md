@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laamani mohamade</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+        }
+        
+        .name {
+            font-size: 4rem;
+            font-weight: bold;
+            margin: 30px 0;
+            color: #FFD700;
+            text-shadow: 0 0 15px rgba(255, 215, 0, 0.7);
+            animation: glow 2s infinite alternate;
+        }
+        
+        .dollar-signs {
+            font-size: 3rem;
+            color: #32CD32;
+            margin: 20px 0;
+            letter-spacing: 5px;
+            text-shadow: 0 0 10px rgba(50, 205, 50, 0.7);
+        }
+        
+        .message {
+            font-size: 1.5rem;
+            margin-top: 30px;
+            line-height: 1.6;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        
+        .decoration {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+        }
+        
+        .circle {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.2);
+            margin: 0 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.8rem;
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        .circle:nth-child(2) {
+            animation-delay: 0.5s;
+        }
+        
+        .circle:nth-child(3) {
+            animation-delay: 1s;
+        }
+        
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+            }
+            to {
+                text-shadow: 0 0 20px rgba(255, 215, 0, 1), 0 0 30px rgba(255, 215, 0, 0.8);
+            }
+        }
+        
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-15px);
+            }
+            100% {
+                transform: translateY(0px);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            .name {
+                font-size: 3rem;
+            }
+            
+            .dollar-signs {
+                font-size: 2.5rem;
+            }
+            
+            .circle {
+                width: 70px;
+                height: 70px;
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>مرحباً بكم في موقع</h1>
+        
+        <div class="name">Laamani mohamade</div>
+        
+        <div class="dollar-signs">$$$$$$$</div>
+        
+        <div class="decoration">
+            <div class="circle">★</div>
+            <div class="circle">✦</div>
+            <div class="circle">★</div>
+        </div>
+        
+        <div class="message">
+            هذا موقع مخصص لعرض محتوى "Laamani mohamade $$$$$$$" كما طلبت.
+        </div>
+    </div>
+</body>
+</html>
